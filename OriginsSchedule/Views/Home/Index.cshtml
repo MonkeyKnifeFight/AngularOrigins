@@ -1,0 +1,27 @@
+﻿@model IEnumerable<OriginsSchedule.Data.Event>
+@{
+    ViewBag.Title = "Home Page";
+    
+}
+@section Scripts {
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+    <script src="~/Scripts/ui-grid-unstable.min.js"></script>
+    <link href="~/Content/ui-grid-unstable.min.css" rel="stylesheet" />
+    <script src="~/js/home-index.min.js"></script>
+}
+
+
+ <div id="App1" ng-app="app">
+ 
+    <div ng-controller="MainCtrl">
+      <div id="grid1" ui-grid="{ data: myData }" class="grid"></div>
+    </div>
+ 
+ </div>
+
