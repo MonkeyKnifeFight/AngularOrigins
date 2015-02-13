@@ -23,7 +23,7 @@ namespace OriginsSchedule.Controllers
                            results = _repo.GetEvents();
             
             var Events = results.OrderByDescending(t => t.eventcategory)
-                                .Take(1000)
+                                .Take(10000)
                                 .ToList();
 
             return Events;

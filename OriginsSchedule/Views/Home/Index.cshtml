@@ -20,7 +20,10 @@
  <div id="App1" ng-app="app">
  
     <div ng-controller="MainCtrl">
-      <div id="grid1" ui-grid="{ data: myData }" class="grid"></div>
+        <strong>Event Count:</strong> {{ gridOptions.data.length | number }}
+        <br>
+        <br>
+        <div id="grid1" ui-grid="gridOptions" ui-grid-edit class="grid" ui-grid-expandable-row></div>
     </div>
  
  </div>

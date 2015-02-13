@@ -1,14 +1,21 @@
 ﻿var app = angular.module('app', ['ngTouch', 'ui.grid']);
  
-app.controller('MainCtrl', ['$scope', function ($scope) {
+app.controller('MainCtrl', ['$scope', '$http',function ($scope, $http) {
+    $scope.gridOptions = {
+
+    };
     
     $scope.gridOptions.columndefs = [
-        {name: 'id'},
+        
         {name: 'eventnumber'},
         {name: 'eventname'},
         {name: 'featuretextdescription'},
         {name: 'price'},
-        {name: 'eventcategory'}
+        {name: 'eventcategory' },
+        { name: 'eventdatestarttime'},
+        { name: 'maximumplayers'}
+
+
     ];
     $http.get("/api/v1/events")
         .success(function(data) {

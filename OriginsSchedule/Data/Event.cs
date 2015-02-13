@@ -9,11 +9,13 @@ namespace OriginsSchedule.Data
     public class Event
     {
         public string id { get; set; }
-        public float eventnumber { get; set; }
+        public double eventnumber { get; set; }
         public string eventname { get; set; }
         public string featuretextdescription { get; set; }
-        public float price { get; set; }
+        public Nullable<double> price { get; set; }
         public string eventcategory { get; set; }
-
+        public Nullable<DateTimeOffset> eventdatestarttime { get; set; }
+        public Nullable<double> maximumplayers { get; set; }
+        
     }
 }

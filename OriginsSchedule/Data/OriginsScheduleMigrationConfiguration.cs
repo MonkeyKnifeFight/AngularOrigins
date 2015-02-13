@@ -13,6 +13,8 @@ namespace OriginsSchedule.Data
         {
             this.AutomaticMigrationDataLossAllowed = true;
             this.AutomaticMigrationsEnabled = true;
+            
+            
         }
 
         protected override void Seed(OriginsScheduleContext context)

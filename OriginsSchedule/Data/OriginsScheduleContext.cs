@@ -14,7 +14,7 @@ namespace OriginsSchedule.Data
     {
       this.Configuration.LazyLoadingEnabled = false;
       this.Configuration.ProxyCreationEnabled = false;
-
+      
       Database.SetInitializer(
         new MigrateDatabaseToLatestVersion<OriginsScheduleContext, OriginsScheduleMigrationsConfiguration>()
         );
